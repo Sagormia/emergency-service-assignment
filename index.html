@@ -4,12 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Emergency Service</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body class="bg-[#F5FFF6]">
+    <body class="bg-[#F5FFF6] hind">
         <header class="bg-white sticky top-0 left-0 w-full py-6">
             <div class="container flex items-center justify-between">
                 <img src="assets/images/logo.svg" class="w-[12.18rem]" alt="">
@@ -29,13 +26,271 @@
             </div>
         </header>
         <main>
+            <!-- banner section -->
             <section class="py-8 bg-[linear-gradient(90deg,_#013223_0%,_#006747_49.99%,_#013223_100%)] text-white">
                 <div class="container text-center space-y-3">
                     <img src="assets/images/logo2.svg" class="w-[5.75rem] mx-auto" alt="">
-                    <h1 class="text-[2.5rem] font-semibold leading-[1.37] pt-2">জরুরি সেবা ডিরেক্টরি</h1>
+                    <h1 class="text-[2.25rem] font-semibold leading-[1.37] pt-2">জরুরি সেবা ডিরেক্টরি</h1>
                     <p class="text-[1.25rem] font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
                 </div>
             </section>
+
+            <!-- main content section -->
+            <section class="pt-5 pb-20">
+                <div class="container">
+                    <div class="flex -mx-3.5 flex-wrap">
+                        <div class="px-3.5 w-9/12">
+                            <div class="flex -mx-3.5 flex-wrap">
+                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                    <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
+                                        <div class="flex item-center justify-between mb-5 w-full">
+                                            <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
+                                                <img src="assets/images/emergency.png" class="h-8" alt="">
+                                            </div>
+                                            <button type="button" class="cursor-pointer heartBtn">
+                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                            </button>
+                                        </div>
+                                        <h2 class="font-bold text-2xl">জাতীয় জরুরি সেবা</h2>
+                                        <p class="subTitle text-lg text-[#5C5C5C] roboto mt-0.5">National Emergency</p>
+                                        <div class="phoneNumber roboto text-3xl font-bold mt-6">999</div>
+                                        <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">সার্বজনীন</div>
+                                        <div class="flex gap-2 w-full mt-auto">
+                                            <button type="button" class="copyBtn roboto">
+                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                Copy
+                                            </button>
+                                            <button type="button" class="callBtn roboto">
+                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                Call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                    <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
+                                        <div class="flex item-center justify-between mb-5 w-full">
+                                            <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#DFEFFF]">
+                                                <img src="assets/images/police.png" class="h-8" alt="">
+                                            </div>
+                                            <button type="button" class="cursor-pointer heartBtn">
+                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                            </button>
+                                        </div>
+                                        <h2 class="font-bold text-2xl">পুলিশ</h2>
+                                        <p class="subTitle text-lg text-[#5C5C5C] roboto mt-0.5">Police</p>
+                                        <div class="phoneNumber roboto text-3xl font-bold mt-6">999</div>
+                                        <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">পুলিশ</div>
+                                        <div class="flex gap-2 w-full mt-auto">
+                                            <button type="button" class="copyBtn roboto">
+                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                Copy
+                                            </button>
+                                            <button type="button" class="callBtn roboto">
+                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                Call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                    <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
+                                        <div class="flex item-center justify-between mb-5 w-full">
+                                            <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
+                                                <img src="assets/images/fire-service.png" class="h-8" alt="">
+                                            </div>
+                                            <button type="button" class="cursor-pointer heartBtn">
+                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                            </button>
+                                        </div>
+                                        <h2 class="font-bold text-2xl">ফায়ার সার্ভিস</h2>
+                                        <p class="subTitle text-lg text-[#5C5C5C] roboto mt-0.5">Fire Service</p>
+                                        <div class="phoneNumber roboto text-3xl font-bold mt-6">999</div>
+                                        <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">ফায়ার</div>
+                                        <div class="flex gap-2 w-full mt-auto">
+                                            <button type="button" class="copyBtn roboto">
+                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                Copy
+                                            </button>
+                                            <button type="button" class="callBtn roboto">
+                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                Call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                    <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
+                                        <div class="flex item-center justify-between mb-5 w-full">
+                                            <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
+                                                <img src="assets/images/ambulance.png" class="h-8" alt="">
+                                            </div>
+                                            <button type="button" class="cursor-pointer heartBtn">
+                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                            </button>
+                                        </div>
+                                        <h2 class="font-bold text-2xl">অ্যাম্বুলেন্স</h2>
+                                        <p class="subTitle text-lg text-[#5C5C5C] roboto mt-0.5">Ambulance</p>
+                                        <div class="phoneNumber roboto text-3xl font-bold mt-6">1994-999999</div>
+                                        <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">স্বাস্থ্য</div>
+                                        <div class="flex gap-2 w-full mt-auto">
+                                            <button type="button" class="copyBtn roboto">
+                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                Copy
+                                            </button>
+                                            <button type="button" class="callBtn roboto">
+                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                Call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                    <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
+                                        <div class="flex item-center justify-between mb-5 w-full">
+                                            <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
+                                                <img src="assets/images/emergency.png" class="h-8" alt="">
+                                            </div>
+                                            <button type="button" class="cursor-pointer heartBtn">
+                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                            </button>
+                                        </div>
+                                        <h2 class="font-bold text-2xl">নারী ও শিশু সহায়তা</h2>
+                                        <p class="subTitle text-lg text-[#5C5C5C] roboto mt-0.5">Women & Child Helpline</p>
+                                        <div class="phoneNumber roboto text-3xl font-bold mt-6">109</div>
+                                        <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">সহায়তা</div>
+                                        <div class="flex gap-2 w-full mt-auto">
+                                            <button type="button" class="copyBtn roboto">
+                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                Copy
+                                            </button>
+                                            <button type="button" class="callBtn roboto">
+                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                Call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                    <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
+                                        <div class="flex item-center justify-between mb-5 w-full">
+                                            <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
+                                                <img src="assets/images/emergency.png" class="h-8" alt="">
+                                            </div>
+                                            <button type="button" class="cursor-pointer heartBtn">
+                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                            </button>
+                                        </div>
+                                        <h2 class="font-bold text-2xl">দুদক</h2>
+                                        <p class="subTitle text-lg text-[#5C5C5C] roboto mt-0.5">Anti-Corruption</p>
+                                        <div class="phoneNumber roboto text-3xl font-bold mt-6">106</div>
+                                        <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">সরকারি</div>
+                                        <div class="flex gap-2 w-full mt-auto">
+                                            <button type="button" class="copyBtn roboto">
+                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                Copy
+                                            </button>
+                                            <button type="button" class="callBtn roboto">
+                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                Call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                    <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
+                                        <div class="flex item-center justify-between mb-5 w-full">
+                                            <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
+                                                <img src="assets/images/emergency.png" class="h-8" alt="">
+                                            </div>
+                                            <button type="button" class="cursor-pointer heartBtn">
+                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                            </button>
+                                        </div>
+                                        <h2 class="font-bold text-2xl">বিদ্যুৎ বিভ্রাট</h2>
+                                        <p class="subTitle text-lg text-[#5C5C5C] roboto mt-0.5">Electricity Outage</p>
+                                        <div class="phoneNumber roboto text-3xl font-bold mt-6">16216</div>
+                                        <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">বিদ্যুৎ</div>
+                                        <div class="flex gap-2 w-full mt-auto">
+                                            <button type="button" class="copyBtn roboto">
+                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                Copy
+                                            </button>
+                                            <button type="button" class="callBtn roboto">
+                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                Call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                    <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
+                                        <div class="flex item-center justify-between mb-5 w-full">
+                                            <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
+                                                <img src="assets/images/brac.png" class="h-8" alt="">
+                                            </div>
+                                            <button type="button" class="cursor-pointer heartBtn">
+                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                            </button>
+                                        </div>
+                                        <h2 class="font-bold text-2xl">ব্র্যাক</h2>
+                                        <p class="subTitle text-lg text-[#5C5C5C] roboto mt-0.5">Brac</p>
+                                        <div class="phoneNumber roboto text-3xl font-bold mt-6">16445</div>
+                                        <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">এনজিও</div>
+                                        <div class="flex gap-2 w-full mt-auto">
+                                            <button type="button" class="copyBtn roboto">
+                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                Copy
+                                            </button>
+                                            <button type="button" class="callBtn roboto">
+                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                Call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                    <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
+                                        <div class="flex item-center justify-between mb-5 w-full">
+                                            <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
+                                                <img src="assets/images/Bangladesh-Railway.png" class="h-8" alt="">
+                                            </div>
+                                            <button type="button" class="cursor-pointer heartBtn">
+                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                            </button>
+                                        </div>
+                                        <h2 class="font-bold text-2xl">বাংলাদেশ রেলওয়ে</h2>
+                                        <p class="subTitle text-lg text-[#5C5C5C] roboto mt-0.5">Bangladesh Railway</p>
+                                        <div class="phoneNumber roboto text-3xl font-bold mt-6">163</div>
+                                        <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">পরিবহন</div>
+                                        <div class="flex gap-2 w-full mt-auto">
+                                            <button type="button" class="copyBtn roboto">
+                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                Copy
+                                            </button>
+                                            <button type="button" class="callBtn roboto">
+                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                Call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- call history -->
+                        <div class="px-3.5 w-3/12 mt-7">
+                            <div class="p-6 bg-white rounded-xl h-full shadow-sm">
+                                <div class="flex items-center justify-between flex-wrap gap-2.5">
+                                    <h3 class="text-xl roboto font-medium flex items-center gap-x-2"><img src="assets/images/clock.svg" class="w-5" alt=""> Call History</h3>
+                                    <button type="button" class="clearBtn inter bg-[#00A63E] text-base font-semibold text-center text-white rounded-full px-9 py-3 transition-all hover:bg-black cursor-pointer">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </body>
 </html>
