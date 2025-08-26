@@ -14,12 +14,15 @@ body{
 .roboto{
     font-family: "Roboto", sans-serif;
 }
+html{
+    @apply text-[3.4vw] sm:text-[2.1vw] lg:text-[71%] xl:text-[90%] 2xl:text-[100%];
+}
 .container{
-    @apply mx-auto px-[3.75rem] max-w-[1920px];
+    @apply mx-auto px-[1.5rem] lg:px-[2rem] xl:px-[2.5rem] 2xl:px-[3.75rem] max-w-[1920px];
 }
 .copyBtn{
-    @apply w-full p-2.5 flex items-center leading-[1.1] justify-center gap-2 text-base text-[#5C5C5C] rounded-lg cursor-pointer border border-[#D4D6D5] transition-all hover:bg-[#e1e1e1];
+    @apply w-full p-2.5 flex items-center leading-[1.1] justify-center gap-2 text-lg sm:text-base text-[#5C5C5C] rounded-lg cursor-pointer border border-[#D4D6D5] transition-all hover:bg-[#e1e1e1];
 }
 .callBtn{
-    @apply w-full p-2.5 bg-[#00A63E] hover:bg-[#048634] text-white flex items-center leading-[1.1] justify-center gap-2 text-base rounded-lg cursor-pointer border border-[#00A63E] transition-all;
+    @apply w-full p-2.5 bg-[#00A63E] hover:bg-[#048634] text-white flex items-center leading-[1.1] justify-center gap-2 text-lg sm:text-base rounded-lg cursor-pointer border border-[#00A63E] transition-all;
 }

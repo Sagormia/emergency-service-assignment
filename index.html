@@ -7,48 +7,51 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body class="bg-[#F5FFF6] hind">
-        <header class="bg-white sticky top-0 left-0 w-full py-6">
+        <header class="bg-white sticky top-0 left-0 w-full py-4 sm:py-6">
             <div class="container flex items-center justify-between">
-                <img src="assets/images/logo.svg" class="w-[12.18rem]" alt="">
-                <div class="flex gap-5">
-                    <div class="bg-[rgba(65,255,107,0.1)] inline-flex items-center justify-center gap-3 shrink-0 w-[7.5rem] py-2.5 px-3 rounded-4xl">
-                        <div class="heartCount inter text-base font-black">0</div>
-                        <img src="assets/images/heart.svg" class="w-[1.875rem]" alt="">
+                <!-- desktop logo -->
+                <img src="assets/images/logo.svg" class="w-[12.18rem] hidden sm:block" alt="">
+                <!-- mobile logo -->
+                <img src="assets/images/mobile-logo.svg" class="w-[4rem] sm:hidden" alt="">
+                <div class="flex gap-1.5 sm:gap-5">
+                    <div class="bg-[rgba(65,255,107,0.1)] inline-flex items-center justify-center gap-3 shrink-0 w-[6rem] sm:w-[7.5rem] py-2.5 px-3 rounded-4xl">
+                        <div class="heartCount inter text-sm sm:text-base font-black">0</div>
+                        <img src="assets/images/heart.svg" class="w-[1.5rem] sm:w-[1.875rem]" alt="">
                     </div>
-                    <div class="bg-[rgba(65,255,107,0.1)] inline-flex items-center justify-center gap-3 shrink-0 w-[6.6rem] py-2.5 px-3 rounded-4xl">
-                        <div class="coinCount inter text-base font-black">100</div>
-                        <img src="assets/images/coin.svg" class="w-6" alt="">
+                    <div class="bg-[rgba(65,255,107,0.1)] inline-flex items-center justify-center gap-3 shrink-0 w-[6rem] sm:w-[6.6rem] py-2.5 px-3 rounded-4xl">
+                        <div class="coinCount inter text-sm sm:text-base font-black">100</div>
+                        <img src="assets/images/coin.svg" class="w-5 sm:w-6" alt="">
                     </div>
-                    <div class="bg-[#00A63E] text-white inline-flex items-center justify-center gap-3 shrink-0 w-[7.95rem] py-2.5 px-3 rounded-4xl">
-                        <div class="inter text-base font-semibold"><span class="copyCount">0</span> Copy</div>
+                    <div class="bg-[#00A63E] text-white inline-flex items-center justify-center gap-3 shrink-0 w-[6rem] sm:w-[7.95rem] py-2.5 px-3 rounded-4xl">
+                        <div class="inter text-sm sm:text-base font-semibold"><span class="copyCount">0</span> Copy</div>
                     </div>
                 </div>
             </div>
         </header>
-        <main>
+        <main class="overflow-hidden">
             <!-- banner section -->
             <section class="py-8 bg-[linear-gradient(90deg,_#013223_0%,_#006747_49.99%,_#013223_100%)] text-white">
                 <div class="container text-center space-y-3">
                     <img src="assets/images/logo2.svg" class="w-[5.75rem] mx-auto" alt="">
-                    <h1 class="text-[2.25rem] font-semibold leading-[1.37] pt-2">জরুরি সেবা ডিরেক্টরি</h1>
+                    <h1 class="text-[1.8rem] sm:text-[2.25rem] font-semibold leading-[1.37] pt-2">জরুরি সেবা ডিরেক্টরি</h1>
                     <p class="text-[1.25rem] font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
                 </div>
             </section>
 
             <!-- main content section -->
-            <section class="pt-5 pb-20">
+            <section class="pt-5 pb-12 lg:pb-20">
                 <div class="container">
                     <div class="flex -mx-3.5 flex-wrap">
-                        <div class="px-3.5 w-9/12">
+                        <div class="px-3.5 lg:w-9/12">
                             <div class="flex -mx-3.5 flex-wrap">
-                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                <div class="px-3.5 w-full sm:w-6/12 lg:w-4/12 mt-7">
                                     <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
                                         <div class="flex item-center justify-between mb-5 w-full">
                                             <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
                                                 <img src="assets/images/emergency.png" class="h-8" alt="">
                                             </div>
                                             <button type="button" class="cursor-pointer heartBtn">
-                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                                <img src="assets/images/heart-transparent.svg" class="w-[1.5rem]" alt="">
                                             </button>
                                         </div>
                                         <h2 class="font-bold text-2xl">জাতীয় জরুরি সেবা</h2>
@@ -57,24 +60,24 @@
                                         <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">সার্বজনীন</div>
                                         <div class="flex gap-2 w-full mt-auto">
                                             <button type="button" class="copyBtn roboto">
-                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                <img src="assets/images/copy.svg" class="h-5 sm:h-4" alt="">
                                                 Copy
                                             </button>
                                             <button type="button" class="callBtn roboto">
-                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                <img src="assets/images/call.svg" class="h-5 sm:h-4" alt="">
                                                 Call
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                <div class="px-3.5 w-full sm:w-6/12 lg:w-4/12 mt-7">
                                     <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
                                         <div class="flex item-center justify-between mb-5 w-full">
                                             <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#DFEFFF]">
                                                 <img src="assets/images/police.png" class="h-8" alt="">
                                             </div>
                                             <button type="button" class="cursor-pointer heartBtn">
-                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                                <img src="assets/images/heart-transparent.svg" class="w-[1.5rem]" alt="">
                                             </button>
                                         </div>
                                         <h2 class="font-bold text-2xl">পুলিশ</h2>
@@ -83,24 +86,24 @@
                                         <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">পুলিশ</div>
                                         <div class="flex gap-2 w-full mt-auto">
                                             <button type="button" class="copyBtn roboto">
-                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                <img src="assets/images/copy.svg" class="h-5 sm:h-4" alt="">
                                                 Copy
                                             </button>
                                             <button type="button" class="callBtn roboto">
-                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                <img src="assets/images/call.svg" class="h-5 sm:h-4" alt="">
                                                 Call
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                <div class="px-3.5 w-full sm:w-6/12 lg:w-4/12 mt-7">
                                     <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
                                         <div class="flex item-center justify-between mb-5 w-full">
                                             <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
                                                 <img src="assets/images/fire-service.png" class="h-8" alt="">
                                             </div>
                                             <button type="button" class="cursor-pointer heartBtn">
-                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                                <img src="assets/images/heart-transparent.svg" class="w-[1.5rem]" alt="">
                                             </button>
                                         </div>
                                         <h2 class="font-bold text-2xl">ফায়ার সার্ভিস</h2>
@@ -109,24 +112,24 @@
                                         <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">ফায়ার</div>
                                         <div class="flex gap-2 w-full mt-auto">
                                             <button type="button" class="copyBtn roboto">
-                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                <img src="assets/images/copy.svg" class="h-5 sm:h-4" alt="">
                                                 Copy
                                             </button>
                                             <button type="button" class="callBtn roboto">
-                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                <img src="assets/images/call.svg" class="h-5 sm:h-4" alt="">
                                                 Call
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                <div class="px-3.5 w-full sm:w-6/12 lg:w-4/12 mt-7">
                                     <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
                                         <div class="flex item-center justify-between mb-5 w-full">
                                             <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
                                                 <img src="assets/images/ambulance.png" class="h-8" alt="">
                                             </div>
                                             <button type="button" class="cursor-pointer heartBtn">
-                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                                <img src="assets/images/heart-transparent.svg" class="w-[1.5rem]" alt="">
                                             </button>
                                         </div>
                                         <h2 class="font-bold text-2xl">অ্যাম্বুলেন্স</h2>
@@ -135,24 +138,24 @@
                                         <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">স্বাস্থ্য</div>
                                         <div class="flex gap-2 w-full mt-auto">
                                             <button type="button" class="copyBtn roboto">
-                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                <img src="assets/images/copy.svg" class="h-5 sm:h-4" alt="">
                                                 Copy
                                             </button>
                                             <button type="button" class="callBtn roboto">
-                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                <img src="assets/images/call.svg" class="h-5 sm:h-4" alt="">
                                                 Call
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                <div class="px-3.5 w-full sm:w-6/12 lg:w-4/12 mt-7">
                                     <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
                                         <div class="flex item-center justify-between mb-5 w-full">
                                             <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
                                                 <img src="assets/images/emergency.png" class="h-8" alt="">
                                             </div>
                                             <button type="button" class="cursor-pointer heartBtn">
-                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                                <img src="assets/images/heart-transparent.svg" class="w-[1.5rem]" alt="">
                                             </button>
                                         </div>
                                         <h2 class="font-bold text-2xl">নারী ও শিশু সহায়তা</h2>
@@ -161,24 +164,24 @@
                                         <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">সহায়তা</div>
                                         <div class="flex gap-2 w-full mt-auto">
                                             <button type="button" class="copyBtn roboto">
-                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                <img src="assets/images/copy.svg" class="h-5 sm:h-4" alt="">
                                                 Copy
                                             </button>
                                             <button type="button" class="callBtn roboto">
-                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                <img src="assets/images/call.svg" class="h-5 sm:h-4" alt="">
                                                 Call
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                <div class="px-3.5 w-full sm:w-6/12 lg:w-4/12 mt-7">
                                     <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
                                         <div class="flex item-center justify-between mb-5 w-full">
                                             <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
                                                 <img src="assets/images/emergency.png" class="h-8" alt="">
                                             </div>
                                             <button type="button" class="cursor-pointer heartBtn">
-                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                                <img src="assets/images/heart-transparent.svg" class="w-[1.5rem]" alt="">
                                             </button>
                                         </div>
                                         <h2 class="font-bold text-2xl">দুদক</h2>
@@ -187,24 +190,24 @@
                                         <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">সরকারি</div>
                                         <div class="flex gap-2 w-full mt-auto">
                                             <button type="button" class="copyBtn roboto">
-                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                <img src="assets/images/copy.svg" class="h-5 sm:h-4" alt="">
                                                 Copy
                                             </button>
                                             <button type="button" class="callBtn roboto">
-                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                <img src="assets/images/call.svg" class="h-5 sm:h-4" alt="">
                                                 Call
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                <div class="px-3.5 w-full sm:w-6/12 lg:w-4/12 mt-7">
                                     <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
                                         <div class="flex item-center justify-between mb-5 w-full">
                                             <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
                                                 <img src="assets/images/emergency.png" class="h-8" alt="">
                                             </div>
                                             <button type="button" class="cursor-pointer heartBtn">
-                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                                <img src="assets/images/heart-transparent.svg" class="w-[1.5rem]" alt="">
                                             </button>
                                         </div>
                                         <h2 class="font-bold text-2xl">বিদ্যুৎ বিভ্রাট</h2>
@@ -213,24 +216,24 @@
                                         <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">বিদ্যুৎ</div>
                                         <div class="flex gap-2 w-full mt-auto">
                                             <button type="button" class="copyBtn roboto">
-                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                <img src="assets/images/copy.svg" class="h-5 sm:h-4" alt="">
                                                 Copy
                                             </button>
                                             <button type="button" class="callBtn roboto">
-                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                <img src="assets/images/call.svg" class="h-5 sm:h-4" alt="">
                                                 Call
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                <div class="px-3.5 w-full sm:w-6/12 lg:w-4/12 mt-7">
                                     <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
                                         <div class="flex item-center justify-between mb-5 w-full">
                                             <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
                                                 <img src="assets/images/brac.png" class="h-8" alt="">
                                             </div>
                                             <button type="button" class="cursor-pointer heartBtn">
-                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                                <img src="assets/images/heart-transparent.svg" class="w-[1.5rem]" alt="">
                                             </button>
                                         </div>
                                         <h2 class="font-bold text-2xl">ব্র্যাক</h2>
@@ -239,24 +242,24 @@
                                         <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">এনজিও</div>
                                         <div class="flex gap-2 w-full mt-auto">
                                             <button type="button" class="copyBtn roboto">
-                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                <img src="assets/images/copy.svg" class="h-5 sm:h-4" alt="">
                                                 Copy
                                             </button>
                                             <button type="button" class="callBtn roboto">
-                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                <img src="assets/images/call.svg" class="h-5 sm:h-4" alt="">
                                                 Call
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-3.5 w-full md:w-6/12 lg:w-4/12 mt-7">
+                                <div class="px-3.5 w-full sm:w-6/12 lg:w-4/12 mt-7">
                                     <div class="p-6 lg:p-8 bg-white rounded-xl shadow-sm serviceBox flex flex-col items-start h-full">
                                         <div class="flex item-center justify-between mb-5 w-full">
                                             <div class="rounded-2xl h-[3.75rem] w-[3.75rem] flex items-center justify-center bg-[#FFE3E2]">
                                                 <img src="assets/images/Bangladesh-Railway.png" class="h-8" alt="">
                                             </div>
                                             <button type="button" class="cursor-pointer heartBtn">
-                                                <img src="assets/images/heart-transparent.svg" class="w-5" alt="">
+                                                <img src="assets/images/heart-transparent.svg" class="w-[1.5rem]" alt="">
                                             </button>
                                         </div>
                                         <h2 class="font-bold text-2xl">বাংলাদেশ রেলওয়ে</h2>
@@ -265,11 +268,11 @@
                                         <div class="bg-[#F2F2F2] py-1.5 px-4 text-lg text-[#5C5C5C] rounded-full mb-6 inline-block h-9 mt-0.5">পরিবহন</div>
                                         <div class="flex gap-2 w-full mt-auto">
                                             <button type="button" class="copyBtn roboto">
-                                                <img src="assets/images/copy.svg" class="h-4" alt="">
+                                                <img src="assets/images/copy.svg" class="h-5 sm:h-4" alt="">
                                                 Copy
                                             </button>
                                             <button type="button" class="callBtn roboto">
-                                                <img src="assets/images/call.svg" class="h-4" alt="">
+                                                <img src="assets/images/call.svg" class="h-5 sm:h-4" alt="">
                                                 Call
                                             </button>
                                         </div>
@@ -279,10 +282,10 @@
                         </div>
 
                         <!-- call history -->
-                        <div class="px-3.5 w-3/12 mt-7">
+                        <div class="px-3.5 w-full lg:w-3/12 mt-7">
                             <div class="p-6 bg-white rounded-xl h-full shadow-sm">
                                 <div class="flex items-center justify-between flex-wrap gap-2.5">
-                                    <h3 class="text-xl roboto font-medium flex items-center gap-x-2"><img src="assets/images/clock.svg" class="w-5" alt=""> Call History</h3>
+                                    <h3 class="text-xl roboto font-medium flex items-center gap-x-2"><img src="assets/images/clock.svg" class="w-5 shrink-0" alt=""> Call History</h3>
                                     <button type="button" class="clearBtn inter bg-[#00A63E] text-base font-semibold text-center text-white rounded-full px-9 py-3 transition-all hover:bg-black cursor-pointer">Clear</button>
                                 </div>
                                 <div class="history-wrap space-y-2 mt-4">
