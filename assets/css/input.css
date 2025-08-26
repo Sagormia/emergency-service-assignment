@@ -1,1 +1,10 @@
 @import "tailwindcss";
+body{
+    font-family: "Hind Madurai", sans-serif;
+}
+.inter{
+    font-family: "Inter", sans-serif;
+}
+.container{
+    @apply mx-auto px-[3.75rem] max-w-[1920px];
+}
