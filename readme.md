@@ -28,12 +28,12 @@
 ```
 
 ### 3. What is **Event Bubbling** and how does it work?
-  **Event Bubbling:** It means events start from the target element and bubble up through its ancestors in the DOM tree. When we click on a button inside a box, the click doesn’t just stay on the button. It first happens on the button, then it moves up to the box that holds the button, then to whatever is holding that box, and so on until it reaches the very top of the page (the document). This step-by-step movement upwards is what’s called event bubbling.
+  **Event Bubbling:** It means events start from the target element and bubble up through its ancestors in the DOM tree. When we click on a button inside a box, the click doesn’t just stay on the button. It first happens on the button, then it moves up to the box that holds the button, then to whatever is holding that box, and so on until it reaches top of the document. This step-by-step movement upwards is what’s called event bubbling.
 
 ---
 
 ### 4. What is **Event Delegation** in JavaScript? Why is it useful?
-  **Event Delegation:** Event delegation means we don’t have to put an event listener on every single child element. Instead, we put one listener on the parent, and because of event bubbling, that parent can “catch” events from its children. Then we just check which child was clicked and run the right code. It’s useful because it makes our code faster, cleaner, and it works even if new child elements are added later - we don’t need to keep adding listeners again and again.
+  **Event Delegation:** Event delegation means we don’t have to put an event listener on every single child element. Instead, we put one listener on the parent, and because of event bubbling, that parent can catch events from its children. Then we just check which child was clicked and run the right code. It’s useful because it makes our code faster, cleaner, and it works even if new child elements are added later - we don’t need to keep adding listeners again and again.
 
 ---
 
